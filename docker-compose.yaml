@@ -1,0 +1,12 @@
+version: "2"
+services:
+  frontend-drone-delivery:
+    container_name: frontend-drone-delivery
+    #command: bash -c "npm run build && npm run start"
+    build: 
+     context: .
+     dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src
+    ports:
+      - 3000:3000
