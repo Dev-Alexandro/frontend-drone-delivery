@@ -1,5 +1,6 @@
 import Button from '@mui/material/Button';
 import { TextField, List, ListItem, ListItemText } from '@mui/material';
+import { Content } from '@/styles/global';
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 import { auth } from '@/services/auth';
