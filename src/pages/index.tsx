@@ -50,35 +50,18 @@ export default function Home() {
 
         if (auth_ === true) {
 
+
             let result = await calcDelivery(start_point, pickup_point, delivery_point);
+
+    
             let path1: any = [];
-            for (let i = 0; i < result.path1.length; i++) {
 
-                if (i % 2 === 0) {
-
-                    if (result.path1.length - 1 == i) {
-
-                        path1.push(result.path1[i - 1]);
-                        path1.push(result.path1[i]);
-
-                    } else {
-
-                        if (i == 0) {
-                            path1.push(result.path1[i]);
-
-                        } else {
-
-                            path1.push(result.path1[i - 1]);
-                        }
-
-                    }
-
-                } else {
-
-                    path1.push(result.path1[i]);
-
-                }
+            for (let i = 0; i < result.path1.length - 1; i++) {
+                path1.push(result.path1[i]);
+                path1.push(result.path1[i + 1]);
             }
+
+            console.log(path1);
 
             let formattedPath1Result = '';
 
@@ -95,34 +78,12 @@ export default function Home() {
             }
 
 
+          
             let path2: any = [];
-            for (let i = 0; i < result.path2.length; i++) {
 
-                if (i % 2 === 0) {
-
-                    if (result.path2.length - 1 == i) {
-
-                        path2.push(result.path2[i - 1]);
-                        path2.push(result.path2[i]);
-
-                    } else {
-
-                        if (i == 0) {
-                            path2.push(result.path2[i]);
-
-                        } else {
-
-                            path2.push(result.path2[i - 1]);
-                        }
-
-                    }
-
-
-                } else {
-
-                    path2.push(result.path2[i]);
-
-                }
+            for (let i = 0; i < result.path2.length - 1; i++) {
+                path2.push(result.path2[i]);
+                path2.push(result.path2[i + 1]);
             }
 
             let formattedPath2Result = '';
