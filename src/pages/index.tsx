@@ -61,7 +61,6 @@ export default function Home() {
                 path1.push(result.path1[i + 1]);
             }
 
-            console.log(path1);
 
             let formattedPath1Result = '';
 
