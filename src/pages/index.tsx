@@ -154,7 +154,7 @@ export default function Home() {
 
     return (
 
-        <Container>
+
             <Content>
 
 
@@ -224,7 +224,7 @@ export default function Home() {
 
                 </div>
             </Content>
-        </Container>
+
 
     )
 }

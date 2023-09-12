@@ -19,7 +19,7 @@ export const Content = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 0 40px 0 40px;
-    background-color: #f3eaea;
+    background-color: #e0c7c7;
     border-radius: 10px;
     box-shadow: 0 0 100px rgba(0,0,0,0.1);
 
@@ -64,8 +64,8 @@ export const Content = styled.div`
     justify-content: center;    
     position: relative;
     margin-bottom: 50px;
-    padding: 0 40px 0 40px;
-    background-color: #f3eaea;
+    padding: 20px 40px 0 40px;
+    background-color: #e0c7c7;
     border-radius: 10px;
     box-shadow: 0 0 100px rgba(0,0,0,0.1);
 
@@ -93,21 +93,6 @@ export const Content = styled.div`
 
 `;
 
-export const Container = styled.div`
-    width: 100%;
-    max-width: 1120px;
-    
-    margin: 0 auto;
-    flex-direction: column;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 30px 0 30px;
-    background-color: #f3eaea;
-    border-radius: 10px;
-    box-shadow: 0 0 100px rgba(0,0,0,0.1);
-    
-    `;
 
 
 
